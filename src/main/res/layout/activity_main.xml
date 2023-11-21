@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/nomeEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nome" />
+
+    <EditText
+        android:id="@+id/pesoEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nomeEditText"
+        android:layout_marginTop="8dp"
+        android:hint="Peso" />
+
+    <EditText
+        android:id="@+id/idadeEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pesoEditText"
+        android:layout_marginTop="8dp"
+        android:hint="Idade" />
+
+    <EditText
+        android:id="@+id/sexoEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idadeEditText"
+        android:layout_marginTop="8dp"
+        android:hint="Sexo" />
+
+    <RadioGroup
+        android:id="@+id/diaSemanaRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sexoEditText"
+        android:layout_marginTop="8dp">
+
+        <RadioButton
+            android:id="@+id/segundaRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Segunda-feira" />
+        <RadioButton
+            android:id="@+id/tercaRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Terça-feira" />
+        <RadioButton
+            android:id="@+id/quartaRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quarta-feira" />
+        <RadioButton
+            android:id="@+id/quintaRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quinta-feira" />
+        <RadioButton
+            android:id="@+id/sextaRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sexta-feira" />
+        <RadioButton
+            android:id="@+id/sabadoRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sabado-feira" />
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/descritivoEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/diaSemanaRadioGroup"
+        android:layout_marginTop="8dp"
+        android:hint="Descritivo do Treino" />
+
+    <Button
+        android:id="@+id/salvarButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/descritivoEditText"
+        android:layout_marginTop="16dp"
+        android:text="Salvar" />
+
+    <!-- ListView para exibir os atletas -->
+    <ListView
+        android:id="@+id/listViewAtletas"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/salvarButton"
+        android:layout_marginTop="16dp" />
+
+</RelativeLayout>
